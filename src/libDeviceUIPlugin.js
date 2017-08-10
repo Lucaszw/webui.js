@@ -38,8 +38,9 @@ require('codemirror/mode/css/css');
 require('codemirror/mode/htmlmixed/htmlmixed');
 
 global.CodeMirror = require('codemirror/lib/codemirror');
-global.$ = require("jquery-slim");
+global.jQuery = require("jquery-slim"); global.$ = global.jQuery;
 global.d3 = require("d3");
+global.D = require('DOMArray').default;
 global.OrbitControls = require('three-orbit-controls')(THREE);
 global.Stats = require("stats-js");
 global.DockPanel = require('phosphor-dockpanel').DockPanel;
