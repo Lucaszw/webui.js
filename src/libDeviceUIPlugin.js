@@ -19,8 +19,10 @@ global._ = require('lodash');
 global._fp = require('lodash/fp');
 global.THREE = require('three');
 global.Key = require('keyboard-shortcut');
+
 global.PhosphorMenus = require('phosphor-menus');
-global.PhosphorWidget =require('phosphor-widget');
+global.FocusTracker = require('@phosphor/widgets').FocusTracker;
+global.PhosphorWidget = require('phosphor-widget');
 
 global.THREELine2d = {}
 global.THREELine2d.Line = require('../lib/three-line-2d')(THREE);
