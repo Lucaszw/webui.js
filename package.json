@@ -24,6 +24,7 @@
     "two": "Two"
   },
   "dependencies": {
+    "@phosphor/messaging": "^1.2.2",
     "@phosphor/widgets": "^1.5.0",
     "DOMArray": "^1.0.0",
     "ajv": "^4.8.2",

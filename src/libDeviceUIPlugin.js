@@ -20,9 +20,9 @@ global._fp = require('lodash/fp');
 global.THREE = require('three');
 global.Key = require('keyboard-shortcut');
 
-global.PhosphorMenus = require('phosphor-menus');
+// global.PhosphorMenus = require('phosphor-menus');
 global.FocusTracker = require('@phosphor/widgets').FocusTracker;
-global.PhosphorWidget = require('phosphor-widget');
+global.PhosphorWidget = require('@phosphor/widgets').Widget;
 
 global.THREELine2d = {}
 global.THREELine2d.Line = require('../lib/three-line-2d')(THREE);
@@ -45,7 +45,12 @@ global.d3 = require("d3");
 global.D = require('DOMArray').default;
 global.OrbitControls = require('three-orbit-controls')(THREE);
 global.Stats = require("stats-js");
-global.DockPanel = require('phosphor-dockpanel').DockPanel;
+
+global.DockPanel = require('@phosphor/widgets').DockPanel;
+global.PhosphorWidgets = require('@phosphor/widgets');
+global.TabPanel = require('@phosphor/widgets').TabPanel;
+global.Panel = require('@phosphor/widgets').Panel;
+global.SplitPanel = require('@phosphor/widgets').SplitPanel;
 
 global.MouseEventHandler =
     require("../lib/ThreeHelpers.MouseEventHandler.js")(THREE);
